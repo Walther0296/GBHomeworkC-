@@ -56,14 +56,14 @@ Console.WriteLine("Задача №4.");
 Console.WriteLine("Введите число:");
 int num2 = Convert.ToInt32(Console.ReadLine ());
 int result = 2;
-if (num2>=2){
-Console.WriteLine("Все четные числа от 1 до " + num2 + ":");}
+if (num2>=2){Console.WriteLine("Все четные числа от 1 до " + num2 + ":");}
 else {Console.WriteLine("Четные числа от 1 до " + num2 + " отсутствуют!");}
-if (result <= num2) {
-    Console.WriteLine(result);
-    result = result + 2;      
+
+while (result <= num2) {
+        Console.Write(result);
+        result = result + 2;
+        
+        if (result <= num2){
+            Console.Write(",");
+    }
 }
-
-
-
-
