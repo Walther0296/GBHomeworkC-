@@ -9,8 +9,10 @@ int a1 = Convert.ToInt32 (Console.ReadLine ());
 Console.WriteLine("Введите число b:");
 int b1 = Convert.ToInt32(Console.ReadLine ());
 int max = a1; 
-if (a1<b1) {max = b1;}
-Console.WriteLine("Больше число из заданных: " + max);
+int min = b1; 
+if (a1<b1) {max = b1; min = a1;}
+Console.WriteLine("Большее число из заданных: " + max);
+Console.WriteLine("Меньшее число из заданных: " + min);
 
 
 // Задача №2. Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -32,7 +34,7 @@ if (c2>max2){
     max2 = c2;
 }
 
-Console.WriteLine("Больше число из заданных: " + max2);
+Console.WriteLine("Большее число из заданных: " + max2);
 
 
 // Задача №3. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
