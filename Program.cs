@@ -64,6 +64,6 @@ while (result <= num2) {
         result = result + 2;
         
         if (result <= num2){
-            Console.Write(",");
+            Console.Write(", ");
     }
 }
